@@ -11,9 +11,10 @@
     "@fluentui/react": "^7.155.3",
     "@monaco-editor/react": "^3.8.3",
     "lodash.debounce": "^4.0.8",
+    "pegjs-backtrace": "^0.2.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-peg": "file:react-peg-0.1.0.tgz",
+    "react-peg": "file:react-peg-0.1.7-0.tgz",
     "react-scripts": "3.0.0",
     "typedraft": "0.2.5"
   },

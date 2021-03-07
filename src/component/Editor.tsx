@@ -31,7 +31,7 @@ export function Editor(props: IEditorProps) {
             setOutput(result["message"]);
         }
         else if (result["default"] && result["default"].message) {
-            setOutput(result["default"].message + "\n\nlocation:\n" + JSON.stringify(result["default"].location, null ,4));
+            setOutput("message:\n" + result["default"].message + "\n\nlocation:\n" + JSON.stringify(result["default"].location, null ,4) + "\n\nbacktrace:\n" + result["default"].backtrace);
         } else {
             setOutput(JSON.stringify(result, null, 4));
         }
