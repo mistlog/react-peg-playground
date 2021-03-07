@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Nav, INavLinkGroup, INavLink } from '@fluentui/react';
 import CalculatorExample from "./examples/calculator.json";
+import CalculatorErrorExample from "./examples/calculator-error.json";
 import JSONExample from "./examples/json.json";
 
 export type Examples = Map<string, Array<IExample>>;
@@ -18,6 +19,7 @@ const examples = new Map<string, Array<IExample>>([
     ["Examples", [
         { name: "calculator", code: CalculatorExample.code },
         { name: "json", code: JSONExample.code },
+        { name: "calculator-error", code: CalculatorErrorExample.code },
     ]]
 ]);
 

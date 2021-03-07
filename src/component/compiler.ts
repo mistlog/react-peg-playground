@@ -2,6 +2,7 @@ import * as babel from "@babel/core";
 import jsxPlugin from "@babel/plugin-transform-react-jsx";
 import commonjsPlugin from "@babel/plugin-transform-modules-commonjs";
 import { ReactPeg } from "react-peg";
+import * as Tracer from "pegjs-backtrace";
 
 export function execute(code: string) {
     try {
@@ -33,7 +34,8 @@ function evalScript(code: string, deps = {}) {
 }
 
 const BuiltInModules = {
-    "react-peg": { ReactPeg }
+    "react-peg": { ReactPeg },
+    "pegjs-backtrace": { Tracer }
 };
 
 function createRequire(deps = {}) {
